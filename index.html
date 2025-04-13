@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaNet</title>
+    <link rel="icon" href="aquaneticon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- FontAwesome CSS for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand img {
+            border-radius: 50%;
+        }
+        .navbar-nav .nav-link {
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #007bff;
+        }
+        .hero-section {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            margin: auto;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .hero-content h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+        .feature-section {
+            padding: 60px 20px;
+            background-color: #f9f9f9;
+        }
+        .feature {
+            text-align: center;
+            padding: 20px;
+        }
+        .feature i {
+            font-size: 3rem;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .footer {
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html"><img src="img/aquanet.png" width="30" height="30" alt="AquaNet"> AquaNet</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="aboutus.html"><b>About Us</b></a></li>
+                <li class="nav-item"><a class="nav-link" href="login.php"><b>Login</b></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- First Hero Section -->
+    <section class="hero-section" style="background-image: url('img/hero.png');">
+        <div class="hero-content">
+            <h1>Welcome to AquaNet</h1>
+            <p>Revolutionizing Water Monitoring Systems</p>
+        </div>
+    </section>
+
+    <!-- Second Hero Section -->
+    <section class="hero-section" style="background-image: url('img/heroo2.png');">
+        <div class="hero-content">
+            <h1>Real-Time Monitoring</h1>
+            <p>Track water quality with live data analytics</p>
+        </div>
+    </section>
+
+    <!-- Third Hero Section -->
+    <section class="hero-section" style="background-image: url('img/heroo3.png');">
+        <div class="hero-content">
+            <h1>Mobile Access</h1>
+            <p>Monitor your systems from anywhere with your phone</p>
+        </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section class="feature-section">
+        <div class="container">
+            <h2 class="text-center">Why Choose AquaNet?</h2>
+            <div class="row">
+                <div class="col-md-4 feature">
+                    <i class="fas fa-tint"></i>
+                    <h3>Real-time Monitoring</h3>
+                    <p>Track water quality with live data analytics.</p>
+                </div>
+                <div class="col-md-4 feature">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Access</h3>
+                    <p>Monitor your systems from anywhere on your phone.</p>
+                </div>
+                <div class="col-md-4 feature">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Advanced Control</h3>
+                    <p>Automate and control your water management with precision.</p>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <h4>Are you interested?</h4>
+                <br>
+                <a href="login.php" class="btn btn-primary btn-lg">Join AquaNet Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p><b>AquaNet Project 2024</b></p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
